@@ -1,16 +1,48 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Login } from './login/login';
-import { Signup } from './signup/signup';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, Signup],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  title = 'TODO-List';
-  x = 10;
-  y = 20;
+
+  // handleClick(){
+  //   console.log("function called")
+  //   this.otherHandler()
+  // };
+
+  // otherHandler(){
+  //   console.log("this is another One..")
+  // }
+  count = 0
+
+  // handleDecrement(){
+  //   this.count = this.count-1
+  // };
+
+  // handleReset(){
+  //   this.count=0
+  // };
+
+  // handleIncrement(){
+  //   this.count = this.count + 1
+  // };
+
+  handleVar(val: string) {
+    if (val == 'minus') {
+      this.count = this.count - 1
+      if(this.count < 0){
+        this.count = 0
+      }
+    } else if (val == 'plus') {
+      this.count = this.count + 1
+    } else {
+      this.count = 0
+    }
+  }
+
+
 }
