@@ -9,6 +9,19 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
 
+  name = ""
+  displayName = ""
+  getName(event:Event){
+    const val = (event.target as HTMLInputElement).value
+    this.name = val
+  }
+  showName(){
+    this.displayName = this.name 
+  }
+  setName(){
+    this.name = "sam"
+  }
+
   // handleClick(){
   //   console.log("function called")
   //   this.otherHandler()
@@ -17,7 +30,7 @@ export class App {
   // otherHandler(){
   //   console.log("this is another One..")
   // }
-  count = 0
+  // count = 0
 
   // handleDecrement(){
   //   this.count = this.count-1
@@ -31,18 +44,20 @@ export class App {
   //   this.count = this.count + 1
   // };
 
-  handleVar(val: string) {
-    if (val == 'minus') {
-      this.count = this.count - 1
-      if(this.count < 0){
-        this.count = 0
-      }
-    } else if (val == 'plus') {
-      this.count = this.count + 1
-    } else {
-      this.count = 0
-    }
-  }
+  // handleVar(val: string) {
+  //   if (val == 'minus') {
+  //     this.count = this.count - 1
+  //     if(this.count < 0){
+  //       this.count = 0
+  //     }
+  //   } else if (val == 'plus') {
+  //     this.count = this.count + 1
+  //   } else {
+  //     this.count = 0
+  //   }
+  // }
+
+
 
 
 }
