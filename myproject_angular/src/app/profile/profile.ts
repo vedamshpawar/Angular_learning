@@ -8,18 +8,20 @@ import { Component } from '@angular/core';
 })
 export class Profile {
 
-  display=true
+  // display=true
 
-  hide(){
-    this.display=false
-  }
+  // hide(){
+  //   this.display=false
+  // }
 
-  show(){
-    this.display=true
-  }
+  // show(){
+  //   this.display=true
+  // }
 
-  toggleTwo(){
-    this.display =! this.display
-  }
+  // toggleTwo(){
+  //   this.display =! this.display
+  // }
+
+  
 
 }
