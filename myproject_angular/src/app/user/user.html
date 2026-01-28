@@ -26,7 +26,7 @@
 </div>
 } -->
 
-<button (click)="handleColor('red')">Red</button>
+<!-- <button (click)="handleColor('red')">Red</button>
 <button (click)="handleColor('green')">Green</button>
 <button (click)="handleColor('yellow')">Yellow</button>
 <button (click)="handleColor('blue')">Blue</button>
@@ -48,4 +48,19 @@
     @default{
         <h1 style="background-color: goldenrod; color: aliceblue;">No color</h1>
     }
+} -->
+
+<!-- @for(user of users; track user){
+    <h2>{{user}}</h2>
 }
+
+<hr>
+
+@for(student of students; track student){
+    <h2>{{student.name}}</h2>
+    <h2>{{student.age}}</h2>
+    <h2>{{student.email}}</h2>
+} -->
+
+<h1>{{z()}}</h1>
+<button (click)="showValue()">show value</button>
