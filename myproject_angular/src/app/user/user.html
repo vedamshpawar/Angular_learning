@@ -62,5 +62,26 @@
     <h2>{{student.email}}</h2>
 } -->
 
-<h1>{{z()}}</h1>
-<button (click)="showValue()">show value</button>
+<!-- <h1>{{z()}}</h1>
+<button (click)="showValue()">show value</button> -->
+
+<!-- <h1>{{userName()}}</h1> -->
+
+
+@for(user of userName; track user;
+let i = $index;
+let f = $first;
+let l = $last;
+){
+
+@if(f || l){
+    <h2 style="background-color: lightblue;">this is our {{i+1}} and here i'm {{user}}</h2>
+
+}@else{
+    <h2 style="background-color: red;">this is our {{i+1}} and here i'm {{user}}</h2>
+
+
+} 
+<h2>{{$count}}</h2>
+
+}
